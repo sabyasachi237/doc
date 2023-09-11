@@ -1,0 +1,5706 @@
+/* prettier-ignore */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+/* prettier-ignore */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* hide built in input clear button in IE */
+
+input[type='text']::-ms-clear {
+    display: none;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "kievit-slab-book";
+    /* replacing kievit with sharp sans medium */
+    src: url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Medium-v1.002.woff2") format("woff2"), url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Medium-v1.002.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "sharp-sans-medium";
+    src: url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Medium-v1.002.woff2") format("woff2"), url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Medium-v1.002.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "sharp-sans-semibold";
+    src: url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Semibold-v1.002.woff2") format("woff2"), url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Semibold-v1.002.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "sharp-sans-bold";
+    src: url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Bold-v1.002.woff2") format("woff2"), url("https://d1uhlocgth3qyq.cloudfront.net/fonts/SharpSans-Bold-v1.002.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'fallback-font';
+    ascent-override: 100.9%;
+    descent-override: 30.6%;
+    line-gap-override: 0;
+    advance-override: 0;
+    src: local('Verdana');
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F7F8F9;
+    color: #333333;
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+img {
+    /* Grid defaults to get images and embeds to work properly */
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    /* Get rid of gap under images by making them display: inline-block; by default */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main {
+    display: block;
+    /* IE */
+}
+@media (-moz-touch-enabled: 1),
+(pointer: coarse) {
+    body {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+.dIMIBq {
+    display: inline-block;
+    font-size: 8px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.ckGSaT {
+    display: inline-block;
+    font-size: 11.531px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.ietewD {
+    display: inline-block;
+    font-size: 10px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.dIMPVP {
+    display: inline-block;
+    font-size: 1em;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.ietevn {
+    display: inline-block;
+    font-size: 36px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.ietexO {
+    display: inline-block;
+    font-size: 22px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+.ietewE {
+    display: inline-block;
+    font-size: 20px;
+    height: 1em;
+    width: 1em;
+}
+
+/*!sc*/
+
+data-styled.g1[id="patient-web-app__sc-1jwy0ls-0"] {
+    content: "dIMIBq,ckGSaT,ietewD,dIMPVP,ietevn,ietexO,ietewE,"
+}
+
+/*!sc*/
+
+.bXKCef {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+/*!sc*/
+
+.bXKCef:hover {
+    cursor: pointer;
+}
+
+/*!sc*/
+
+data-styled.g11[id="patient-web-app__sc-1fzty1a-0"] {
+    content: "bXKCef,"
+}
+
+/*!sc*/
+
+.icLkkf {
+    border: none;
+}
+
+/*!sc*/
+
+.icLkkf:hover {
+    cursor: pointer;
+}
+
+/*!sc*/
+
+data-styled.g12[id="patient-web-app__sc-1fzty1a-1"] {
+    content: "icLkkf,"
+}
+
+/*!sc*/
+
+.eDBLra {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*!sc*/
+
+.eDBLra>* {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+/*!sc*/
+
+data-styled.g24[id="patient-web-app__sc-1jvx0pj-0"] {
+    content: "eDBLra,"
+}
+
+/*!sc*/
+
+.ggrHTr {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 100%;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 48px;
+    padding: 0 20px;
+}
+
+/*!sc*/
+
+.ggrHTr:focus {
+    outline: 0;
+}
+
+/*!sc*/
+
+.ggrHTr:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid #4E93F3;
+}
+
+/*!sc*/
+
+.dbcZyM {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 48px;
+    padding: 0 20px;
+}
+
+/*!sc*/
+
+.dbcZyM:focus {
+    outline: 0;
+}
+
+/*!sc*/
+
+.dbcZyM:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid #4E93F3;
+}
+
+/*!sc*/
+
+data-styled.g25[id="patient-web-app__sc-tki2ss-0"] {
+    content: "ggrHTr,dbcZyM,"
+}
+
+/*!sc*/
+
+.fNHVuG {
+    display: inline-block;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: 100%;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 48px;
+    padding: 0 20px;
+}
+
+/*!sc*/
+
+.fNHVuG:focus {
+    outline: 0;
+}
+
+/*!sc*/
+
+.fNHVuG:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid #4E93F3;
+}
+
+/*!sc*/
+
+.cTEsdx {
+    display: inline-block;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 48px;
+    padding: 0 20px;
+}
+
+/*!sc*/
+
+.cTEsdx:focus {
+    outline: 0;
+}
+
+/*!sc*/
+
+.cTEsdx:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid #4E93F3;
+}
+
+/*!sc*/
+
+data-styled.g26[id="patient-web-app__sc-tki2ss-1"] {
+    content: "fNHVuG,cTEsdx,"
+}
+
+/*!sc*/
+
+.gCYfdK {
+    background-color: rgba(0, 0, 0, 0);
+    color: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+/*!sc*/
+
+.gCYfdK:hover {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FFF;
+}
+
+/*!sc*/
+
+.gCYfdK:active {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FFF;
+}
+
+/*!sc*/
+
+data-styled.g29[id="patient-web-app__sc-1vacugm-0"] {
+    content: "gCYfdK,"
+}
+
+/*!sc*/
+
+.gKXUUU {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 54px;
+    padding-top: 54px;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gKXUUU {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .gKXUUU {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .gKXUUU {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gKXUUU {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .gKXUUU {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .gKXUUU {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+}
+
+/*!sc*/
+
+.gKXUUU h1 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .gKXUUU h1 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+.gKXUUU h2 {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gKXUUU h2 {
+        font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .gKXUUU h2 {
+        font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+.gKXUUU h3 {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gKXUUU h3 {
+        font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+.gKXUUU h4 {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gKXUUU h4 {
+        font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+.gKXUUU .bold {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+}
+
+/*!sc*/
+
+data-styled.g30[id="patient-web-app__sc-17zpxnq-0"] {
+    content: "gKXUUU,"
+}
+
+/*!sc*/
+
+.exISAM {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .exISAM {
+        max-width: 1440px;
+    }
+}
+
+/*!sc*/
+
+.hvREQH {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .hvREQH {
+        max-width: 500px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hvREQH {
+        max-width: 1440px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g31[id="patient-web-app__sc-zcahh1-0"] {
+    content: "exISAM,hvREQH,"
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cYehpp {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: -24px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cYehpp {
+        margin-left: -48px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g32[id="patient-web-app__sc-zcahh1-1"] {
+    content: "cYehpp,"
+}
+
+/*!sc*/
+
+.nOarD {
+    -webkit-flex: 1 0 0px;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .nOarD {
+        margin-left: 24px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .nOarD {
+        margin-left: 48px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g33[id="patient-web-app__sc-ldmyx9-0"] {
+    content: "nOarD,"
+}
+
+/*!sc*/
+
+.jWJjcr {
+    padding-top: 45px;
+    background-color: #FFF0BB;
+    text-align: center;
+}
+
+/*!sc*/
+
+.jWJjcr h2 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding-bottom: 12px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jWJjcr h2 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .jWJjcr h2 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jWJjcr h2 {
+        padding-bottom: 66px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jWJjcr {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 48px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jWJjcr {
+        padding-top: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 90px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g34[id="sc-bcXHqe"] {
+    content: "jWJjcr,"
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iUzvua {
+        -webkit-align-items: flex-end;
+        -webkit-box-align: flex-end;
+        -ms-flex-align: flex-end;
+        align-items: flex-end;
+        margin-left: -12px;
+        margin-top: 54px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .iUzvua {
+        margin-left: -48px;
+        margin-top: 78px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g35[id="sc-gswNZR"] {
+    content: "iUzvua,"
+}
+
+/*!sc*/
+
+.eYdHny {
+    background-color: #FDFAEE;
+    border-radius: 8px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .eYdHny {
+        margin-top: 45px;
+    }
+    .eYdHny:first-child {
+        margin-top: 39px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eYdHny {
+        margin-left: 12px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eYdHny {
+        margin-left: 48px;
+    }
+}
+
+/*!sc*/
+
+.eYdHny h4 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin: 9px auto 0;
+    max-width: 280px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .eYdHny h4 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eYdHny h4 {
+        max-width: 220px;
+        height: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eYdHny h4 {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/*!sc*/
+
+.eYdHny img {
+    max-width: 66%;
+    margin-top: -32px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eYdHny img {
+        margin-top: -32px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eYdHny img {
+        margin-top: -80px;
+    }
+}
+
+/*!sc*/
+
+.eYdHny a {
+    background: transparent;
+}
+
+/*!sc*/
+
+.eYdHny a,
+.eYdHny a:hover {
+    border: solid 2px #192A50;
+}
+
+/*!sc*/
+
+data-styled.g36[id="sc-dkrFOg"] {
+    content: "eYdHny,"
+}
+
+/*!sc*/
+
+.gvYjVX {
+    max-width: 50%;
+    padding-top: 12px;
+    padding-bottom: 36px;
+    margin: auto;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gvYjVX {
+        max-width: 280px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 32px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .gvYjVX {
+        padding-top: 22px;
+        padding-bottom: 42px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g37[id="sc-hLBbgP"] {
+    content: "gvYjVX,"
+}
+
+/*!sc*/
+
+.dVKpaq {
+    font-size: inherit;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    color: #333333;
+}
+
+/*!sc*/
+
+.dVKpaq:active {
+    color: #505050;
+}
+
+/*!sc*/
+
+.dVKpaq:focus-visible {
+    border-radius: 2px;
+    outline: 1px solid #3D7CE6;
+}
+
+/*!sc*/
+
+data-styled.g38[id="patient-web-app__sc-5y8rad-0"] {
+    content: "dVKpaq,"
+}
+
+/*!sc*/
+
+.hJMGUA {
+    background-color: transparent;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    color: #333333;
+    height: 44px;
+    width: 44px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+/*!sc*/
+
+.hJMGUA:hover,
+.hJMGUA:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    outline: none;
+}
+
+/*!sc*/
+
+.hJMGUA:active {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+/*!sc*/
+
+data-styled.g40[id="patient-web-app__sc-1umqpka-0"] {
+    content: "hJMGUA,"
+}
+
+/*!sc*/
+
+.kMIAls {
+    display: block;
+    width: 100%;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kMIAls {
+        border-bottom: 1px solid #CECECE;
+    }
+}
+
+/*!sc*/
+
+data-styled.g41[id="patient-web-app__sc-1fqk7iu-0"] {
+    content: "kMIAls,"
+}
+
+/*!sc*/
+
+.hSzzDS {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    padding: 17px 15px 19px 15px;
+    border-top: 1px solid #E2E2E2;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hSzzDS {
+        margin-top: 0;
+        padding: 16px 0;
+        border-top: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g42[id="patient-web-app__sc-1fqk7iu-1"] {
+    content: "hSzzDS,"
+}
+
+/*!sc*/
+
+.eQmdre {
+    display: none;
+    padding: 16px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eQmdre {
+        padding: 0 0 16px 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g43[id="patient-web-app__sc-1fqk7iu-2"] {
+    content: "eQmdre,"
+}
+
+/*!sc*/
+
+.fXfueZ {
+    background-color: #F5F0E2;
+}
+
+/*!sc*/
+
+data-styled.g44[id="patient-web-app__sc-fqsudo-0"] {
+    content: "fXfueZ,"
+}
+
+/*!sc*/
+
+.jlIvqe {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 54px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jlIvqe {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jlIvqe {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .jlIvqe {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .jlIvqe {
+        max-width: 500px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jlIvqe {
+        max-width: 1440px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jlIvqe {
+        padding-top: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jlIvqe {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g45[id="patient-web-app__sc-fqsudo-1"] {
+    content: "jlIvqe,"
+}
+
+/*!sc*/
+
+.jumILn {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .jumILn {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g46[id="patient-web-app__sc-fqsudo-2"] {
+    content: "jumILn,"
+}
+
+/*!sc*/
+
+.ieNJqS {
+    margin-top: 30px;
+}
+
+/*!sc*/
+
+data-styled.g47[id="patient-web-app__sc-fqsudo-3"] {
+    content: "ieNJqS,"
+}
+
+/*!sc*/
+
+.jrOHbH {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*!sc*/
+
+data-styled.g48[id="patient-web-app__sc-fqsudo-4"] {
+    content: "jrOHbH,"
+}
+
+/*!sc*/
+
+.eUqOyL {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eUqOyL {
+        width: 22.2%;
+    }
+    .eUqOyL:not(:last-child) {
+        margin-right: 3.7%;
+    }
+}
+
+/*!sc*/
+
+data-styled.g49[id="patient-web-app__sc-fqsudo-5"] {
+    content: "eUqOyL,"
+}
+
+/*!sc*/
+
+.kNIEHl {
+    margin-bottom: 10px;
+}
+
+/*!sc*/
+
+data-styled.g50[id="patient-web-app__sc-fqsudo-6"] {
+    content: "kNIEHl,"
+}
+
+/*!sc*/
+
+.bSnshN {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+/*!sc*/
+
+@media screen and (min-width:375px) {
+    .bSnshN {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bSnshN {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bSnshN {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .bSnshN {
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1440px) {
+    .bSnshN {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1520px) {
+    .bSnshN {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g51[id="patient-web-app__sc-13a0bfj-0"] {
+    content: "bSnshN,"
+}
+
+/*!sc*/
+
+.jmfsPr {
+    width: 3.375em;
+}
+
+/*!sc*/
+
+data-styled.g52[id="patient-web-app__sc-rpbq65-0"] {
+    content: "jmfsPr,"
+}
+
+/*!sc*/
+
+.gDicuN {
+    width: 3.375em;
+}
+
+/*!sc*/
+
+data-styled.g53[id="patient-web-app__sc-1yp4hvr-0"] {
+    content: "gDicuN,"
+}
+
+/*!sc*/
+
+.jYtlUq {
+    width: 1em;
+}
+
+/*!sc*/
+
+data-styled.g54[id="patient-web-app__sc-1g2el13-0"] {
+    content: "jYtlUq,"
+}
+
+/*!sc*/
+
+.gRhcyQ {
+    width: 1em;
+}
+
+/*!sc*/
+
+data-styled.g55[id="patient-web-app__sc-1ps2c8f-0"] {
+    content: "gRhcyQ,"
+}
+
+/*!sc*/
+
+.cxkQcJ {
+    width: 1em;
+}
+
+/*!sc*/
+
+data-styled.g56[id="patient-web-app__sc-4kqp02-0"] {
+    content: "cxkQcJ,"
+}
+
+/*!sc*/
+
+.bPUdJV {
+    width: 1.25em;
+}
+
+/*!sc*/
+
+data-styled.g57[id="patient-web-app__sc-1ohhtwq-0"] {
+    content: "bPUdJV,"
+}
+
+/*!sc*/
+
+.cbEdXv {
+    border: none !important;
+    display: block;
+}
+
+/*!sc*/
+
+data-styled.g58[id="patient-web-app__sc-1p26ggy-0"] {
+    content: "cbEdXv,"
+}
+
+/*!sc*/
+
+.kBOwSv {
+    margin-top: 9px !important;
+}
+
+/*!sc*/
+
+data-styled.g59[id="patient-web-app__sc-1p26ggy-1"] {
+    content: "kBOwSv,"
+}
+
+/*!sc*/
+
+.jgeZKD {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    color: #fff;
+    -webkit-letter-spacing: 0.1px;
+    -moz-letter-spacing: 0.1px;
+    -ms-letter-spacing: 0.1px;
+    letter-spacing: 0.1px;
+    padding-top: 2px;
+    padding-bottom: 12px;
+}
+
+/*!sc*/
+
+data-styled.g60[id="patient-web-app__sc-1q37iq0-0"] {
+    content: "jgeZKD,"
+}
+
+/*!sc*/
+
+.fLOQDC {
+    padding-bottom: 22px;
+}
+
+/*!sc*/
+
+data-styled.g61[id="patient-web-app__sc-1q37iq0-1"] {
+    content: "fLOQDC,"
+}
+
+/*!sc*/
+
+.iIyuQA {
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin: 0 0 9px;
+}
+
+/*!sc*/
+
+data-styled.g62[id="patient-web-app__sc-1q37iq0-2"] {
+    content: "iIyuQA,"
+}
+
+/*!sc*/
+
+.gTBzcU {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font: inherit;
+}
+
+/*!sc*/
+
+.gTBzcU:focus,
+.gTBzcU:hover {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*!sc*/
+
+.gTBzcU:visited {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*!sc*/
+
+data-styled.g63[id="patient-web-app__sc-1q37iq0-3"] {
+    content: "gTBzcU,"
+}
+
+/*!sc*/
+
+.jtQvoN {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*!sc*/
+
+data-styled.g64[id="patient-web-app__sc-1q37iq0-4"] {
+    content: "jtQvoN,"
+}
+
+/*!sc*/
+
+.gbotmp {
+    background-color: #333333;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*!sc*/
+
+.gbotmp>*:not(:first-child) {
+    margin-left: 2vw;
+}
+
+/*!sc*/
+
+data-styled.g65[id="patient-web-app__sc-ad6b8g-0"] {
+    content: "gbotmp,"
+}
+
+/*!sc*/
+
+.gpVvS {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    background-color: #333333;
+    color: #fff;
+    padding: 32px 16px 10px 16px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gpVvS {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .gpVvS {
+        padding: 0 42px 32px 42px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g66[id="patient-web-app__sc-196jqa3-0"] {
+    content: "gpVvS,"
+}
+
+/*!sc*/
+
+.cvwIPM {
+    width: 2.14em;
+}
+
+/*!sc*/
+
+data-styled.g67[id="patient-web-app__sc-o743dv-0"] {
+    content: "cvwIPM,"
+}
+
+/*!sc*/
+
+.bSwlbh {
+    width: 1.575em;
+}
+
+/*!sc*/
+
+data-styled.g68[id="patient-web-app__sc-11w4zoj-0"] {
+    content: "bSwlbh,"
+}
+
+/*!sc*/
+
+.MzyvS {
+    display: inline-block;
+    cursor: pointer;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding: 0 0 0 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .MzyvS {
+        padding: 0;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .MzyvS:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+/*!sc*/
+
+data-styled.g70[id="patient-web-app__sc-1uyzvt6-0"] {
+    content: "MzyvS,"
+}
+
+/*!sc*/
+
+.bLYBGW {
+    margin-right: 0 !important;
+}
+
+/*!sc*/
+
+data-styled.g71[id="patient-web-app__sc-1uyzvt6-1"] {
+    content: "bLYBGW,"
+}
+
+/*!sc*/
+
+.eGMuxM {
+    margin-left: 6px;
+    font-size: 6px;
+    margin-bottom: 2px;
+}
+
+/*!sc*/
+
+data-styled.g72[id="patient-web-app__sc-1uyzvt6-2"] {
+    content: "eGMuxM,"
+}
+
+/*!sc*/
+
+.hCNzVW {
+    display: none;
+    background-color: #333333;
+    color: #fff;
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hCNzVW {
+        background-color: #000024;
+        padding-top: 23px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g73[id="patient-web-app__sc-1ewrb0x-0"] {
+    content: "hCNzVW,"
+}
+
+/*!sc*/
+
+.bVESXd {
+    margin-bottom: 12px;
+    max-width: 800px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bVESXd {
+        margin-bottom: 16px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g74[id="patient-web-app__sc-1ewrb0x-1"] {
+    content: "bVESXd,"
+}
+
+/*!sc*/
+
+.ittwri {
+    display: block;
+}
+
+/*!sc*/
+
+data-styled.g75[id="patient-web-app__sc-1ewrb0x-2"] {
+    content: "ittwri,"
+}
+
+/*!sc*/
+
+.ilFWic {
+    color: #FFF;
+    border-bottom-color: transparent;
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .ilFWic {
+        color: #fff;
+        border-bottom-color: transparent;
+    }
+}
+
+/*!sc*/
+
+data-styled.g76[id="patient-web-app__sc-1ewrb0x-3"] {
+    content: "ilFWic,"
+}
+
+/*!sc*/
+
+.efoHwB {
+    color: rgba(255, 255, 255, 0.6);
+    border: 0;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    border: 0;
+    margin-right: 8px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .efoHwB {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .efoHwB:focus,
+    .efoHwB:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    .efoHwB:visited {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+/*!sc*/
+
+data-styled.g77[id="patient-web-app__sc-1ewrb0x-4"] {
+    content: "efoHwB,"
+}
+
+/*!sc*/
+
+.WFCVm {
+    background-color: #333333;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .WFCVm {
+        background-color: black;
+    }
+}
+
+/*!sc*/
+
+data-styled.g78[id="patient-web-app__sc-pkwszy-0"] {
+    content: "WFCVm,"
+}
+
+/*!sc*/
+
+.jeGHpI {
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jeGHpI {
+        padding: 15px 53px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g79[id="patient-web-app__sc-pkwszy-1"] {
+    content: "jeGHpI,"
+}
+
+/*!sc*/
+
+.fCHNIf {
+    color: #FFF;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+data-styled.g80[id="patient-web-app__sc-pkwszy-2"] {
+    content: "fCHNIf,"
+}
+
+/*!sc*/
+
+.iGCbvI {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+.iGCbvI:focus,
+.iGCbvI:hover {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*!sc*/
+
+.iGCbvI:visited {
+    border-bottom-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*!sc*/
+
+data-styled.g81[id="patient-web-app__sc-pkwszy-3"] {
+    content: "iGCbvI,"
+}
+
+/*!sc*/
+
+.foPQds {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*!sc*/
+
+.foPQds:first-child {
+    margin-right: auto;
+}
+
+/*!sc*/
+
+data-styled.g82[id="patient-web-app__sc-pkwszy-4"] {
+    content: "foPQds,"
+}
+
+/*!sc*/
+
+.kRtwQM> :not(:last-child) {
+    margin-right: 8px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kRtwQM> :not(:last-child) {
+        margin-right: 18px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g83[id="patient-web-app__sc-pkwszy-5"] {
+    content: "kRtwQM,"
+}
+
+/*!sc*/
+
+.htwzAL {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*!sc*/
+
+.htwzAL> :not(:last-child) {
+    margin-right: 13px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .htwzAL {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g84[id="patient-web-app__sc-pkwszy-6"] {
+    content: "htwzAL,"
+}
+
+/*!sc*/
+
+.bVzfyf {
+    display: block;
+    width: 100%;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bVzfyf {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: auto;
+    }
+}
+
+/*!sc*/
+
+data-styled.g85[id="patient-web-app__sc-pkwszy-7"] {
+    content: "bVzfyf,"
+}
+
+/*!sc*/
+
+.dPKygQ {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dPKygQ {
+        display: block;
+    }
+}
+
+/*!sc*/
+
+data-styled.g86[id="patient-web-app__sc-pkwszy-8"] {
+    content: "dPKygQ,"
+}
+
+/*!sc*/
+
+.fTVoWw {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*!sc*/
+
+.fTVoWw [data-test='privacy-choices'] {
+    opacity: 0.6;
+}
+
+/*!sc*/
+
+.fTVoWw:hover [data-test='privacy-choices'] {
+    opacity: 1;
+}
+
+/*!sc*/
+
+data-styled.g87[id="patient-web-app__sc-pkwszy-9"] {
+    content: "fTVoWw,"
+}
+
+/*!sc*/
+
+.hQNyha {
+    margin-left: 7px;
+}
+
+/*!sc*/
+
+data-styled.g88[id="patient-web-app__sc-pkwszy-10"] {
+    content: "hQNyha,"
+}
+
+/*!sc*/
+
+.hYdGVK {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/*!sc*/
+
+.hYdGVK *,
+.hYdGVK *::before,
+.hYdGVK *::after {
+    box-sizing: border-box;
+}
+
+/*!sc*/
+
+.hYdGVK>* {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+/*!sc*/
+
+data-styled.g96[id="patient-web-app__sc-ipvq0g-0"] {
+    content: "hYdGVK,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .dTEkQe {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dTEkQe {
+        padding-bottom: 10px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g97[id="patient-web-app__sc-ipvq0g-1"] {
+    content: "dTEkQe,"
+}
+
+/*!sc*/
+
+.eXnnyV {
+    color: #333333;
+    background-color: #FFF04B;
+    border: 1px solid #FFF04B;
+}
+
+/*!sc*/
+
+@media (hover:hover) {
+    .eXnnyV:hover {
+        color: #333333;
+        background-color: #FDE721;
+        border: 1px solid #FDE721;
+    }
+}
+
+/*!sc*/
+
+.eXnnyV:active {
+    color: #333333;
+    background-color: #FFDD28;
+    border: 1px solid #FFDD28;
+}
+
+/*!sc*/
+
+data-styled.g98[id="patient-web-app__sc-dfljeo-0"] {
+    content: "eXnnyV,"
+}
+
+/*!sc*/
+
+.fNBaqr {
+    padding-right: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px 20px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .fNBaqr {
+        gap: 60px 20px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g99[id="sc-eDvSVe"] {
+    content: "fNBaqr,"
+}
+
+/*!sc*/
+
+.hFYSdf {
+    display: inline-block;
+    max-width: 28%;
+    width: 100%;
+}
+
+/*!sc*/
+
+.hFYSdf img {
+    width: 100%;
+    height: 100%;
+}
+
+/*!sc*/
+
+data-styled.g100[id="sc-jSUZER"] {
+    content: "hFYSdf,"
+}
+
+/*!sc*/
+
+.dEyqWe {
+    background-color: #FFF;
+    background-color: #F5F5F5;
+}
+
+/*!sc*/
+
+.dEyqWe .intro {
+    margin-top: 45px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dEyqWe .intro {
+        margin-top: 0px;
+    }
+}
+
+/*!sc*/
+
+.dEyqWe h3 {
+    margin-top: 12px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dEyqWe h3 {
+        margin-top: 14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dEyqWe h3 {
+        margin-top: 24px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dEyqWe .onlyMobile {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .dEyqWe .hideMobile {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dEyqWe {
+        background-color: #FFF;
+        padding-top: 0;
+    }
+    .dEyqWe .panel-grid {
+        background-color: #F5F5F5;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 0;
+        padding-left: 14px;
+        padding-right: 28px;
+    }
+    .dEyqWe .panel-grid>div:first-child {
+        -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    }
+    .dEyqWe .panel-grid>div:last-child {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dEyqWe .panel-grid {
+        padding-right: 48px;
+    }
+}
+
+/*!sc*/
+
+.dEyqWe .intro {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 0.05em;
+    -moz-letter-spacing: 0.05em;
+    -ms-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+}
+
+/*!sc*/
+
+.dEyqWe h3 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-top: 6px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .dEyqWe h3 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dEyqWe h3 {
+        margin-top: 12px;
+        padding-right: 24px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g101[id="patient-web-app__sc-khdcj2-0"] {
+    content: "dEyqWe,"
+}
+
+/*!sc*/
+
+.dmXTEn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dmXTEn {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g102[id="patient-web-app__sc-khdcj2-1"] {
+    content: "dmXTEn,"
+}
+
+/*!sc*/
+
+.ftmHJL {
+    width: 1.3em;
+}
+
+/*!sc*/
+
+data-styled.g103[id="patient-web-app__sc-o8d533-0"] {
+    content: "ftmHJL,"
+}
+
+/*!sc*/
+
+.bLCTLN {
+    width: 0.95em;
+}
+
+/*!sc*/
+
+data-styled.g104[id="patient-web-app__sc-ejmfgo-0"] {
+    content: "bLCTLN,"
+}
+
+/*!sc*/
+
+.eqRbBw {
+    position: relative;
+}
+
+/*!sc*/
+
+data-styled.g132[id="patient-web-app__sc-f9jwpk-0"] {
+    content: "eqRbBw,"
+}
+
+/*!sc*/
+
+.eXExNE {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-color: #E2E2E2;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: #333333;
+    cursor: pointer;
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 48px;
+    padding: 12px 12px 12px 37px;
+    width: 100%;
+}
+
+/*!sc*/
+
+.eXExNE:focus {
+    border-color: #192A50;
+}
+
+/*!sc*/
+
+data-styled.g133[id="patient-web-app__sc-f9jwpk-1"] {
+    content: "eXExNE,"
+}
+
+/*!sc*/
+
+.fpdVqA {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*!sc*/
+
+data-styled.g134[id="patient-web-app__sc-f9jwpk-2"] {
+    content: "fpdVqA,"
+}
+
+/*!sc*/
+
+.joiORY {
+    background: transparent;
+    border: none;
+    color: #2C64D8;
+    cursor: pointer;
+    display: inline;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dotted;
+}
+
+/*!sc*/
+
+.joiORY:hover,
+.joiORY:focus {
+    border-bottom-style: solid;
+}
+
+/*!sc*/
+
+data-styled.g139[id="patient-web-app__sc-esebpo-0"] {
+    content: "joiORY,"
+}
+
+/*!sc*/
+
+.fmddQu {
+    cursor: pointer;
+    display: inline-block;
+    min-width: 20px;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0;
+    padding: 8px 15px 8px;
+    background-color: #FFF04B;
+    border: 1px solid #FFF04B;
+    color: #333333;
+}
+
+/*!sc*/
+
+.fmddQu:hover,
+.fmddQu:active {
+    background-color: #FDE721;
+    border-color: #FDE721;
+    color: #333333;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+/*!sc*/
+
+data-styled.g143[id="patient-web-app__sc-yglqz4-2"] {
+    content: "fmddQu,"
+}
+
+/*!sc*/
+
+.fudSbv {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .fudSbv {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g222[id="patient-web-app__sc-cfwkuj-1"] {
+    content: "fudSbv,"
+}
+
+/*!sc*/
+
+.jJcJhn {
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: -22px;
+    left: -18px;
+    height: 54px;
+    width: 50px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jJcJhn {
+        left: -36px;
+        width: 86px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g223[id="patient-web-app__sc-cfwkuj-2"] {
+    content: "jJcJhn,"
+}
+
+/*!sc*/
+
+.jzRPIz {
+    width: 100%;
+    position: relative;
+}
+
+/*!sc*/
+
+data-styled.g282[id="patient-web-app__sc-1qzdqoy-0"] {
+    content: "jzRPIz,"
+}
+
+/*!sc*/
+
+.cjSCRk {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-style: solid;
+    cursor: pointer;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*!sc*/
+
+data-styled.g283[id="patient-web-app__sc-1qzdqoy-1"] {
+    content: "cjSCRk,"
+}
+
+/*!sc*/
+
+.cUWwyn {
+    display: inline-block;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    color: #333333;
+    border-bottom: 1px solid;
+}
+
+/*!sc*/
+
+data-styled.g284[id="patient-web-app__sc-1qzdqoy-2"] {
+    content: "cUWwyn,"
+}
+
+/*!sc*/
+
+.jIEylj {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 4px;
+    margin-right: 0px;
+    pointer-events: none;
+    -webkit-transform: translateY(-0.5px);
+    -ms-transform: translateY(-0.5px);
+    transform: translateY(-0.5px);
+}
+
+/*!sc*/
+
+data-styled.g285[id="patient-web-app__sc-1qzdqoy-3"] {
+    content: "jIEylj,"
+}
+
+/*!sc*/
+
+.nKkIs {
+    color: #2C64D8;
+}
+
+/*!sc*/
+
+data-styled.g306[id="patient-web-app__sc-1dvlspq-0"] {
+    content: "nKkIs,"
+}
+
+/*!sc*/
+
+.UfJWl {
+    z-index: 10;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .UfJWl {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g335[id="patient-web-app__sc-1e1omv5-0"] {
+    content: "UfJWl,"
+}
+
+/*!sc*/
+
+.hcsqqE {
+    background: transparent;
+    display: none;
+    height: 1px;
+    background: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hcsqqE {
+        background: transparent;
+    }
+}
+
+/*!sc*/
+
+data-styled.g336[id="patient-web-app__sc-1e1omv5-1"] {
+    content: "hcsqqE,"
+}
+
+/*!sc*/
+
+.hsyxlP {
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    background: #FFF04B;
+    box-sizing: border-box;
+    color: #333333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    background: none;
+}
+
+/*!sc*/
+
+.hsyxlP *,
+.hsyxlP *::before,
+.hsyxlP *::after {
+    box-sizing: border-box;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hsyxlP {
+        background: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g337[id="patient-web-app__sc-1e1omv5-2"] {
+    content: "hsyxlP,"
+}
+
+/*!sc*/
+
+.byITdx {
+    position: relative;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {}
+
+/*!sc*/
+
+data-styled.g338[id="patient-web-app__sc-1e1omv5-3"] {
+    content: "byITdx,"
+}
+
+/*!sc*/
+
+.jRdhDQ {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jRdhDQ {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+}
+
+/*!sc*/
+
+data-styled.g339[id="patient-web-app__sc-1e1omv5-4"] {
+    content: "jRdhDQ,"
+}
+
+/*!sc*/
+
+.jtxAIq {
+    background-image: url(https://d1uhlocgth3qyq.cloudfront.net/zocdoc-circle-logo___4b6b5.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 46px;
+    width: 123px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jtxAIq {
+        height: 58px;
+        width: 154px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g346[id="patient-web-app__sc-1e1omv5-11"] {
+    content: "jtxAIq,"
+}
+
+/*!sc*/
+
+.jYthJO {
+    color: #333333;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    display: inline-block;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .jYthJO {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g349[id="patient-web-app__sc-1e1omv5-14"] {
+    content: "jYthJO,"
+}
+
+/*!sc*/
+
+.kjEXmg {
+    border-right: 1px solid #333333;
+    padding: 0 20px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .kjEXmg {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g350[id="patient-web-app__sc-1e1omv5-15"] {
+    content: "kjEXmg,"
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .jIGWRj {
+        padding: 13px 0 12px 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g351[id="patient-web-app__sc-1e1omv5-16"] {
+    content: "jIGWRj,"
+}
+
+/*!sc*/
+
+.lmIRNE {
+    margin-left: 20px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .lmIRNE {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g355[id="patient-web-app__sc-1e1omv5-20"] {
+    content: "lmIRNE,"
+}
+
+/*!sc*/
+
+.ldwXZy {
+    display: inline-block;
+    margin-right: auto;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .ldwXZy {
+        display: inline-block;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .ldwXZy {
+        display: inline-block;
+    }
+}
+
+/*!sc*/
+
+data-styled.g356[id="patient-web-app__sc-1e1omv5-21"] {
+    content: "ldwXZy,"
+}
+
+/*!sc*/
+
+.kSwHFE {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: content-box;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kSwHFE {
+        max-width: 1440px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .kSwHFE {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kSwHFE {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .kSwHFE {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/*!sc*/
+
+.kSwHFE [data-test='header-mobile-menu']>div {
+    margin: 0;
+}
+
+/*!sc*/
+
+data-styled.g358[id="patient-web-app__sc-1krhlv1-0"] {
+    content: "kSwHFE,"
+}
+
+/*!sc*/
+
+.kuHnIf {
+    background-color: #FFF;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .kuHnIf {
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kuHnIf {
+        background-color: #F5F0E2;
+    }
+}
+
+/*!sc*/
+
+data-styled.g359[id="patient-web-app__sc-1kossot-0"] {
+    content: "kuHnIf,"
+}
+
+/*!sc*/
+
+.bFCZXV {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    padding: 0 14px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .bFCZXV {
+        max-width: 500px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bFCZXV {
+        max-width: 1440px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bFCZXV {
+        padding: 0 46px;
+    }
+}
+
+/*!sc*/
+
+.bFCZXV .intro {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 0.05em;
+    -moz-letter-spacing: 0.05em;
+    -ms-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+    margin-top: 45px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bFCZXV .intro {
+        margin-top: 0;
+    }
+}
+
+/*!sc*/
+
+.bFCZXV .flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bFCZXV .flex-container {
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+/*!sc*/
+
+.bFCZXV .flex-container>div:first-child {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+
+/*!sc*/
+
+.bFCZXV svg {
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bFCZXV svg {
+        margin-top: 12px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bFCZXV svg {
+        margin-top: -64px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*!sc*/
+
+.bFCZXV h3 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-top: 10px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .bFCZXV h3 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bFCZXV h3 {
+        margin-top: 12px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bFCZXV h3 {
+        margin-top: 18px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g360[id="patient-web-app__sc-1kossot-1"] {
+    content: "bFCZXV,"
+}
+
+/*!sc*/
+
+.iZvAFo {
+    margin-top: 18px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iZvAFo {
+        margin-top: 24px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g361[id="patient-web-app__sc-1kossot-2"] {
+    content: "iZvAFo,"
+}
+
+/*!sc*/
+
+.IazCA {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*!sc*/
+
+data-styled.g362[id="patient-web-app__sc-1d672ny-0"] {
+    content: "IazCA,"
+}
+
+/*!sc*/
+
+.ffiTdA {
+    padding-bottom: 0 !important;
+    color: black;
+    background-color: #FFC794;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDE4IDM5NSI+CiAgPHBhdGggZD0iTTcwNC4yNDcgMzguNDgzYzEyOS42MzIgNTIuMDY4IDIzMy40MDcgMTUzLjg0NCAyODguNDk4IDI4Mi45NEE1MzIuMDYyIDUzMi4wNjIgMCAwIDEgMTAxNy45NiAzOTVILjVhNTMyLjMyIDUzMi4zMiAwIDAgMSAxOS45NTctNjAuNzg3QzcyLjE3OCAyMDMuNzEyIDE3My4yNzcgOTkuMjQxIDMwMS41MTMgNDMuNzhjMTI4LjIzNS01NS40NiAyNzMuMTAzLTU3LjM2NSA0MDIuNzM0LTUuMjk3WiIgZmlsbD0iI0ZFRUQ1QSIvPgo8L3N2Zz4K);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 588px;
+    padding-top: 45px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .ffiTdA {
+        text-align: center;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .ffiTdA {
+        padding-right: 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .ffiTdA {
+        padding-right: 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .ffiTdA {
+        padding-top: 0 !important;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .ffiTdA .onlyDesktop {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .ffiTdA {
+        background-position: bottom right -150px;
+        background-size: 611px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .ffiTdA {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDkgMTk5Ij4KICA8cGF0aCBkPSJNMTYuMjU3IDY5LjczMmMyNi42OS0yMS44NjkgODMuMzM1LTM1LjAwMSAxMTIuNzA2LTE4LjEwOCAzNy45MTUgMjEuODA5IDE4LjI4MyA3NC40NTUtMjAuMzk2IDY4LjQ1NS0yMS4xMjctMy4yNzgtMjQuNTkzLTIzLjQxNS05LjA2MS0zNy40MzIgMjguNjc0LTI1Ljg4IDEzNi43NC0yNi4wMTcgMTc5LjU0MyA3Mi45NzkiIHN0cm9rZT0iIzI1MkQzNyIgc3Ryb2tlLXdpZHRoPSIzLjc1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMjgzLjQ1NSAxMzAuOTg4Yy0yLjExMSA4LjIzNy0xLjA0NSAyOS40LTEuMDQ1IDI5LjRzLTEzLjQ0Ny0xMS42MjgtMzAuMjQxLTE0LjEzNSIgc3Ryb2tlPSIjMjUyRDM3IiBzdHJva2Utd2lkdGg9IjMuNzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K), url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDE4IDM5NSI+CiAgPHBhdGggZD0iTTcwNC4yNDcgMzguNDgzYzEyOS42MzIgNTIuMDY4IDIzMy40MDcgMTUzLjg0NCAyODguNDk4IDI4Mi45NEE1MzIuMDYyIDUzMi4wNjIgMCAwIDEgMTAxNy45NiAzOTVILjVhNTMyLjMyIDUzMi4zMiAwIDAgMSAxOS45NTctNjAuNzg3QzcyLjE3OCAyMDMuNzEyIDE3My4yNzcgOTkuMjQxIDMwMS41MTMgNDMuNzhjMTI4LjIzNS01NS40NiAyNzMuMTAzLTU3LjM2NSA0MDIuNzM0LTUuMjk3WiIgZmlsbD0iI0ZFRUQ1QSIvPgo8L3N2Zz4K);
+        background-position: 50% 60px, bottom left calc(50% + 300px);
+        background-size: 240px, 1054px;
+    }
+}
+
+/*!sc*/
+
+.ffiTdA h3 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .ffiTdA h3 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g363[id="patient-web-app__sc-12b53k3-0"] {
+    content: "ffiTdA,"
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eoxYYi {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        padding-top: 48px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eoxYYi {
+        padding-top: 95px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g364[id="patient-web-app__sc-12b53k3-1"] {
+    content: "eoxYYi,"
+}
+
+/*!sc*/
+
+.boaobj img {
+    max-width: none;
+    width: auto;
+    height: 335px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .boaobj {
+        width: 40%;
+        padding-top: 80px;
+        text-align: right;
+    }
+    .boaobj img {
+        height: 368px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .boaobj {
+        width: 50%;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+    .boaobj img {
+        height: 570px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g365[id="patient-web-app__sc-12b53k3-2"] {
+    content: "boaobj,"
+}
+
+/*!sc*/
+
+.kfpFiD {
+    margin: 12px auto 0;
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-bottom: 0;
+    max-width: 280px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .kfpFiD {
+        margin: 12px 0 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kfpFiD {
+        margin-top: 14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .kfpFiD {
+        max-width: 425px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g366[id="patient-web-app__sc-12b53k3-3"] {
+    content: "kfpFiD,"
+}
+
+/*!sc*/
+
+.cgzLyQ {
+    display: inline-block;
+}
+
+/*!sc*/
+
+data-styled.g367[id="patient-web-app__sc-12b53k3-4"] {
+    content: "cgzLyQ,"
+}
+
+/*!sc*/
+
+.emxtUX {
+    margin-top: 24px;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-bottom: 12px;
+}
+
+/*!sc*/
+
+data-styled.g368[id="patient-web-app__sc-12b53k3-5"] {
+    content: "emxtUX,"
+}
+
+/*!sc*/
+
+.iZSpch {
+    margin-top: 20px;
+    font-size: 47px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .iZSpch {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iZSpch svg {
+        width: 120px;
+    }
+}
+
+/*!sc*/
+
+.iZSpch span+span {
+    margin-left: 9px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iZSpch span+span {
+        margin-left: 7px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g369[id="patient-web-app__sc-12b53k3-6"] {
+    content: "iZSpch,"
+}
+
+/*!sc*/
+
+.kToDIr {
+    background-color: #FFF;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kToDIr {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+}
+
+/*!sc*/
+
+.kToDIr .intro {
+    font-family: "sharp-sans-bold", "fallback-font", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-transform: uppercase;
+    -webkit-letter-spacing: 0.05em;
+    -moz-letter-spacing: 0.05em;
+    -ms-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .kToDIr .intro {
+        margin-top: 25px;
+    }
+}
+
+/*!sc*/
+
+.kToDIr h3 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-top: 12px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .kToDIr h3 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kToDIr h3 {
+        margin-top: 18px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g370[id="patient-web-app__sc-ihekrp-0"] {
+    content: "kToDIr,"
+}
+
+/*!sc*/
+
+.hxdEss {
+    list-style: initial;
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-left: 18px;
+    margin-top: 22px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .hxdEss li {
+        margin-bottom: 6px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .hxdEss {
+        margin-left: 18px;
+        margin-top: 16px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hxdEss {
+        margin-top: 19px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g371[id="patient-web-app__sc-ihekrp-1"] {
+    content: "hxdEss,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .jQVOSe {
+        width: 100%;
+    }
+}
+
+/*!sc*/
+
+data-styled.g372[id="patient-web-app__sc-ihekrp-2"] {
+    content: "jQVOSe,"
+}
+
+/*!sc*/
+
+.glJNYi {
+    margin-top: 14px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .glJNYi {
+        width: 100%;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .glJNYi {
+        margin-top: 16px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .glJNYi {
+        margin-top: 44px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g373[id="patient-web-app__sc-ihekrp-3"] {
+    content: "glJNYi,"
+}
+
+/*!sc*/
+
+.lnTtPa {
+    background: #FFF;
+    position: relative;
+}
+
+/*!sc*/
+
+data-styled.g386[id="patient-web-app__sc-128lltm-0"] {
+    content: "lnTtPa,"
+}
+
+/*!sc*/
+
+.emCPUk {
+    position: relative;
+    height: 100%;
+}
+
+/*!sc*/
+
+data-styled.g387[id="patient-web-app__sc-128lltm-1"] {
+    content: "emCPUk,"
+}
+
+/*!sc*/
+
+.dqspUz {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    left: 16px;
+    display: inline-block;
+}
+
+/*!sc*/
+
+data-styled.g392[id="patient-web-app__sc-128lltm-6"] {
+    content: "dqspUz,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .bsZHlg {
+        padding-right: 0px;
+        border-bottom: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g394[id="patient-web-app__sc-1268n4o-1"] {
+    content: "bsZHlg,"
+}
+
+/*!sc*/
+
+.gBcIGw {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 69px;
+    padding: 19px 10px 18px 15px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .gBcIGw {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g395[id="patient-web-app__sc-1268n4o-2"] {
+    content: "gBcIGw,"
+}
+
+/*!sc*/
+
+.diVRLV {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 46px;
+    padding: 0 16px;
+    padding-left: 42px;
+    text-overflow: ellipsis;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    width: 100%;
+}
+
+/*!sc*/
+
+.diVRLV:focus {
+    outline: 0;
+}
+
+/*!sc*/
+
+.diVRLV[disabled] {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.diVRLV::-webkit-input-placeholder {
+    color: #505050;
+}
+
+/*!sc*/
+
+.diVRLV::-moz-placeholder {
+    color: #505050;
+}
+
+/*!sc*/
+
+.diVRLV:-ms-input-placeholder {
+    color: #505050;
+}
+
+/*!sc*/
+
+.diVRLV::placeholder {
+    color: #505050;
+}
+
+/*!sc*/
+
+.diVRLV:focus::-webkit-input-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.diVRLV:focus::-moz-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.diVRLV:focus:-ms-input-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.diVRLV:focus::placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    @media screen and (max-width: 767px) {
+        .diVRLV {
+            padding-right:12px;
+        }
+    }
+    @media screen and (min-width:768px) {
+        .diVRLV {
+            padding-left: 45px;
+            padding-right: 24px;
+        }
+    }
+}
+
+/*!sc*/
+
+data-styled.g396[id="patient-web-app__sc-1268n4o-3"] {
+    content: "diVRLV,"
+}
+
+/*!sc*/
+
+.jvfMaE[data-dropdown-active='true'] {
+    z-index: 10;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .jvfMaE[data-dropdown-active='true'] {
+        background-color: #FFF;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jvfMaE {
+        position: relative;
+    }
+}
+
+/*!sc*/
+
+data-styled.g400[id="patient-web-app__sc-1j3nrry-3"] {
+    content: "jvfMaE,"
+}
+
+/*!sc*/
+
+.gLbXlG {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*!sc*/
+
+data-styled.g401[id="patient-web-app__sc-1j3nrry-4"] {
+    content: "gLbXlG,"
+}
+
+/*!sc*/
+
+.doCPNk {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/*!sc*/
+
+data-styled.g402[id="patient-web-app__sc-1j3nrry-5"] {
+    content: "doCPNk,"
+}
+
+/*!sc*/
+
+.dQoxgY {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    color: #333333;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 46px;
+    padding: 0 16px;
+    padding-left: 42px;
+    width: 100%;
+}
+
+/*!sc*/
+
+.dQoxgY::-webkit-input-placeholder {
+    color: #A5A5AD;
+}
+
+/*!sc*/
+
+.dQoxgY::-moz-placeholder {
+    color: #A5A5AD;
+}
+
+/*!sc*/
+
+.dQoxgY:-ms-input-placeholder {
+    color: #A5A5AD;
+}
+
+/*!sc*/
+
+.dQoxgY::placeholder {
+    color: #A5A5AD;
+}
+
+/*!sc*/
+
+.dQoxgY:focus::-webkit-input-placeholder {
+    color: #E1E1E4;
+}
+
+/*!sc*/
+
+.dQoxgY:focus::-moz-placeholder {
+    color: #E1E1E4;
+}
+
+/*!sc*/
+
+.dQoxgY:focus:-ms-input-placeholder {
+    color: #E1E1E4;
+}
+
+/*!sc*/
+
+.dQoxgY:focus::placeholder {
+    color: #E1E1E4;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .patient-web-app__sc-1j3nrry-3 [data-dropdown-active="true"] .patient-web-app__sc-1j3nrry-6 {
+        padding-right: 28px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .dQoxgY {
+        padding: 0 24px;
+        padding-left: 45px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g403[id="patient-web-app__sc-1j3nrry-6"] {
+    content: "dQoxgY,"
+}
+
+/*!sc*/
+
+.kToluW {
+    cursor: pointer;
+    font-size: 10px;
+    padding: 6px 16px;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .kToluW {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g404[id="patient-web-app__sc-1j3nrry-7"] {
+    content: "kToluW,"
+}
+
+/*!sc*/
+
+[data-dropdown-active='true'] .patient-web-app__sc-1j3nrry-8 {
+    width: 1px;
+    height: 20px;
+    background-color: #E2E2E2;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .bXZPae {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g405[id="patient-web-app__sc-1j3nrry-8"] {
+    content: "bXZPae,"
+}
+
+/*!sc*/
+
+.eEaZCt {
+    color: #333333;
+    cursor: pointer;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding: 16px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eEaZCt {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g406[id="patient-web-app__sc-1j3nrry-9"] {
+    content: "eEaZCt,"
+}
+
+/*!sc*/
+
+.kUDAha {
+    position: relative;
+    background-color: #FFF;
+}
+
+/*!sc*/
+
+data-styled.g408[id="patient-web-app__sc-s5og22-0"] {
+    content: "kUDAha,"
+}
+
+/*!sc*/
+
+.fXVGNC {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    left: 16px;
+    display: inline-block;
+}
+
+/*!sc*/
+
+data-styled.g415[id="patient-web-app__sc-u4kqa7-0"] {
+    content: "fXVGNC,"
+}
+
+/*!sc*/
+
+.jRtEDZ {
+    border: 1px solid #FFF;
+    color: #333333;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    height: 46px;
+    padding-left: 42px;
+    padding-right: 17px;
+}
+
+/*!sc*/
+
+.jRtEDZ:focus {
+    border-color: #FFF;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .jRtEDZ {
+        padding-left: 45px;
+        padding-right: 25px;
+    }
+}
+
+/*!sc*/
+
+.jRtEDZ::-webkit-input-placeholder {
+    color: #707070;
+}
+
+/*!sc*/
+
+.jRtEDZ::-moz-placeholder {
+    color: #707070;
+}
+
+/*!sc*/
+
+.jRtEDZ:-ms-input-placeholder {
+    color: #707070;
+}
+
+/*!sc*/
+
+.jRtEDZ::placeholder {
+    color: #707070;
+}
+
+/*!sc*/
+
+.jRtEDZ:focus::-webkit-input-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.jRtEDZ:focus::-moz-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.jRtEDZ:focus:-ms-input-placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+.jRtEDZ:focus::placeholder {
+    color: #E2E2E2;
+}
+
+/*!sc*/
+
+data-styled.g426[id="patient-web-app__sc-1wja9wf-0"] {
+    content: "jRtEDZ,"
+}
+
+/*!sc*/
+
+.gbLTWR {
+    position: relative;
+    background-color: #FFF;
+}
+
+/*!sc*/
+
+.gbLTWR .patient-web-app__sc-f9jwpk-2 {
+    z-index: 1;
+}
+
+/*!sc*/
+
+.gbLTWR [data-test='textbox-icon-wrapper'] {
+    top: 0.6em;
+}
+
+/*!sc*/
+
+data-styled.g440[id="patient-web-app__sc-1wv3fvn-0"] {
+    content: "gbLTWR,"
+}
+
+/*!sc*/
+
+body .branch-animation {
+    display: none;
+}
+
+/*!sc*/
+
+data-styled.g540[id="sc-global-cNszCL1"] {
+    content: "sc-global-cNszCL1,"
+}
+
+/*!sc*/
+
+.fXgPQw {
+    box-sizing: border-box;
+}
+
+/*!sc*/
+
+data-styled.g558[id="patient-web-app__sc-1eh7bit-0"] {
+    content: "fXgPQw,"
+}
+
+/*!sc*/
+
+.kxeeYx {
+    position: relative;
+}
+
+/*!sc*/
+
+.kxeeYx>svg {
+    display: none;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kxeeYx>svg {
+        display: block;
+    }
+}
+
+/*!sc*/
+
+data-styled.g559[id="patient-web-app__sc-1roi23o-0"] {
+    content: "kxeeYx,"
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hFzjjM {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding: 11px;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+/*!sc*/
+
+data-styled.g560[id="patient-web-app__sc-1roi23o-1"] {
+    content: "hFzjjM,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .kFdCJJ {
+        border-bottom: 1px solid #CECECE;
+        margin: 0 0 14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:320px) {
+    .kFdCJJ {
+        margin: 0 0 8px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .kFdCJJ {
+        border-right: 1px solid #CECECE;
+        margin: 0 8px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .bYMJKE {
+        border-bottom: 1px solid #CECECE;
+        margin: 0 0 14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:320px) {
+    .bYMJKE {
+        margin: 0 0 8px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bYMJKE {
+        border-right: 1px solid #CECECE;
+        margin: 0 8px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .bYMJKE {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g561[id="patient-web-app__sc-1roi23o-2"] {
+    content: "kFdCJJ,bYMJKE,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .fPFNsN {
+        margin-left: -12px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .fPFNsN {
+        -webkit-flex: 1.5 1 300px;
+        -ms-flex: 1.5 1 300px;
+        flex: 1.5 1 300px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g562[id="patient-web-app__sc-1roi23o-3"] {
+    content: "fPFNsN,"
+}
+
+/*!sc*/
+
+.zoSVY input {
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    color: #333333;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .zoSVY {
+        margin-left: -12px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .zoSVY {
+        -webkit-flex: 1 1 200px;
+        -ms-flex: 1 1 200px;
+        flex: 1 1 200px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g563[id="patient-web-app__sc-1roi23o-4"] {
+    content: "zoSVY,"
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .dxYTno {
+        margin-left: -12px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .dxYTno {
+        -webkit-flex: 1.3 1 300px;
+        -ms-flex: 1.3 1 300px;
+        flex: 1.3 1 300px;
+    }
+}
+
+/*!sc*/
+
+.dxYTno .patient-web-app__sc-8a7pm7-0 {
+    top: 70px;
+    right: -10px;
+}
+
+/*!sc*/
+
+@media (min-width:768px) and (max-width:1023px) {
+    .dxYTno .patient-web-app__sc-8a7pm7-0 {
+        top: 55px;
+        left: 12px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g564[id="patient-web-app__sc-1roi23o-5"] {
+    content: "dxYTno,"
+}
+
+/*!sc*/
+
+.fxlcTA {
+    margin-top: 4px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .fxlcTA {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g565[id="patient-web-app__sc-1roi23o-6"] {
+    content: "fxlcTA,"
+}
+
+/*!sc*/
+
+.YKnYz {
+    background-color: #FEED5A;
+    border-radius: 5px;
+    border: 1px solid #FEED5A;
+    color: #333333;
+    display: inline-block;
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding: 12px 20px;
+    text-align: center;
+    border: 2px solid #333333;
+    border-left: 0;
+    background-color: #FEED5A;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 69px;
+    position: relative;
+}
+
+/*!sc*/
+
+.YKnYz:not(:disabled) {
+    cursor: pointer;
+}
+
+/*!sc*/
+
+.YKnYz:hover:not(:disabled) {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/*!sc*/
+
+.YKnYz:focus:not(:disabled) {
+    outline: none;
+    box-shadow: 0px 0px 2px #192A50;
+}
+
+/*!sc*/
+
+.YKnYz:active {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+/*!sc*/
+
+.YKnYz:disabled {
+    color: #CECECE;
+    background-color: #F5F5F5;
+    border: 1px solid #CECECE;
+}
+
+/*!sc*/
+
+.YKnYz:hover,
+.YKnYz:active {
+    background-color: #FDE721;
+    border: 1px solid #FDE721;
+    color: #333333;
+}
+
+/*!sc*/
+
+.YKnYz:hover,
+.YKnYz:active {
+    border: 2px solid #333333;
+    border-left: 0;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .YKnYz {
+        display: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g566[id="patient-web-app__sc-1roi23o-7"] {
+    content: "YKnYz,"
+}
+
+/*!sc*/
+
+.hEaLVW {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background-color: #FFF;
+    color: #333333;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:1023px) {
+    .hEaLVW {
+        padding: 12px 16px 18px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (max-width:320px) {
+    .hEaLVW {
+        padding: 10px 16px 14px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .hEaLVW {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        border: 2px solid #333333;
+        border-radius: 5px 0 0 5px;
+        border-right: 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g567[id="patient-web-app__sc-1roi23o-8"] {
+    content: "hEaLVW,"
+}
+
+/*!sc*/
+
+.cIavUu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+/*!sc*/
+
+@media screen and (max-width:767px) {
+    .cIavUu {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cIavUu {
+        margin-top: 48px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cIavUu {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 34px;
+    }
+}
+
+/*!sc*/
+
+.cIavUu .patient-web-app__sc-1roi23o-7 {
+    font-size: 26px;
+}
+
+/*!sc*/
+
+data-styled.g568[id="patient-web-app__sc-1roi23o-9"] {
+    content: "cIavUu,"
+}
+
+/*!sc*/
+
+.fXwsHs {
+    display: inline-block;
+}
+
+/*!sc*/
+
+.fXwsHs.fadeOut {
+    -webkit-animation: jPJzml 3500ms ease-in-out forwards;
+    animation: jPJzml 3500ms ease-in-out forwards;
+}
+
+/*!sc*/
+
+.fXwsHs.fadeInAndOut {
+    -webkit-animation: bwWwin 3500ms ease-in-out forwards;
+    animation: bwWwin 3500ms ease-in-out forwards;
+}
+
+/*!sc*/
+
+data-styled.g569[id="patient-web-app__sc-1hshmns-0"] {
+    content: "fXwsHs,"
+}
+
+/*!sc*/
+
+.iiZSyK {
+    padding-top: 4px;
+    padding-bottom: 24px;
+    background-color: #FDFAEE;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iiZSyK {
+        padding-top: 30px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .iiZSyK {
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+}
+
+/*!sc*/
+
+.iiZSyK .home-page-header {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    position: relative;
+    z-index: 1;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .iiZSyK .home-page-header {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 48px;
+        line-height: 56px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .iiZSyK .home-page-header {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 60px;
+        line-height: 72px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g570[id="patient-web-app__sc-ctoj28-0"] {
+    content: "iiZSyK,"
+}
+
+/*!sc*/
+
+.cpBuUF {
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cpBuUF {
+        font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cpBuUF {
+        font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g630[id="sc-gKPRtg"] {
+    content: "cpBuUF,"
+}
+
+/*!sc*/
+
+.blpcaE {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -6px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .blpcaE {
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .blpcaE {
+        margin: -14px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g631[id="sc-iBYQkv"] {
+    content: "blpcaE,"
+}
+
+/*!sc*/
+
+.haWMXF {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 6px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:460px) {
+    .haWMXF {
+        -webkit-flex-basis: 33.33%;
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .haWMXF {
+        -webkit-flex-basis: 16.66%;
+        -ms-flex-preferred-size: 16.66%;
+        flex-basis: 16.66%;
+        -webkit-flex: 1 1 0px;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        width: 0;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .haWMXF {
+        padding: 14px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g632[id="sc-ftTHYK"] {
+    content: "haWMXF,"
+}
+
+/*!sc*/
+
+.cllrYT {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #F5F0E2;
+    border-radius: 4px;
+    border: 1px solid #CECECE;
+    -webkit-transition: box-shadow 0.1s;
+    transition: box-shadow 0.1s;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 23px;
+    padding-bottom: 13px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cllrYT {
+        padding-bottom: 16px;
+        padding-top: 17px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cllrYT {
+        padding-top: 28px;
+    }
+}
+
+/*!sc*/
+
+.cllrYT:hover {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*!sc*/
+
+.cllrYT p {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 12px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cllrYT p {
+        padding-left: 19px;
+        padding-right: 19px;
+        margin-bottom: 8px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cllrYT p {
+        max-width: 178px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+/*!sc*/
+
+.cllrYT svg {
+    height: auto;
+    width: 100%;
+}
+
+/*!sc*/
+
+.cllrYT label {
+    font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .cllrYT label {
+        font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .cllrYT label {
+        font-family: "sharp-sans-semibold", "fallback-font", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+data-styled.g633[id="sc-pyfCe"] {
+    content: "cllrYT,"
+}
+
+/*!sc*/
+
+.eStTXL {
+    background-color: #FFF;
+    padding-top: 45px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eStTXL {
+        padding-top: 40px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eStTXL {
+        padding-top: 80px;
+    }
+}
+
+/*!sc*/
+
+.eStTXL h3 {
+    font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-letter-spacing: 0em;
+    -moz-letter-spacing: 0em;
+    -ms-letter-spacing: 0em;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding-bottom: 24px;
+}
+
+/*!sc*/
+
+@media screen and (min-width:1280px) {
+    .eStTXL h3 {
+        font-family: "sharp-sans-medium", "fallback-font", Arial, sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        -webkit-letter-spacing: 0em;
+        -moz-letter-spacing: 0em;
+        -ms-letter-spacing: 0em;
+        letter-spacing: 0em;
+        text-transform: none;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:768px) {
+    .eStTXL h3 {
+        padding-bottom: 28px;
+    }
+}
+
+/*!sc*/
+
+@media screen and (min-width:1024px) {
+    .eStTXL h3 {
+        padding-bottom: 48px;
+    }
+}
+
+/*!sc*/
+
+data-styled.g634[id="patient-web-app__sc-8am84v-0"] {
+    content: "eStTXL,"
+}
+
+/*!sc*/
+
+.jUfSIn {
+    color: #333333;
+}
+
+/*!sc*/
+
+data-styled.g635[id="patient-web-app__sc-ifbrwu-0"] {
+    content: "jUfSIn,"
+}
+
+/*!sc*/
+
+@-webkit-keyframes jPJzml {
+    0% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    97% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/*!sc*/
+
+@keyframes jPJzml {
+    0% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    97% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g2730[id="sc-keyframes-jPJzml"] {
+    content: "jPJzml,"
+}
+
+/*!sc*/
+
+@-webkit-keyframes bwWwin {
+    0% {
+        -webkit-transform: translateY(80%);
+        -ms-transform: translateY(80%);
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    3% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    97% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/*!sc*/
+
+@keyframes bwWwin {
+    0% {
+        -webkit-transform: translateY(80%);
+        -ms-transform: translateY(80%);
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    3% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    97% {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/*!sc*/
+
+data-styled.g2731[id="sc-keyframes-bwWwin"] {
+    content: "bwWwin,"
+}
+
+/*!sc*/
